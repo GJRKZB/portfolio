@@ -1,0 +1,138 @@
+{
+  "frontend": [
+    {
+      "title": "Frontend Development",
+      "icons": [
+        {
+          "id": "1",
+          "icon": "svg/html5.svg"
+        },
+        {
+          "id": "2",
+          "icon": "svg/css3.svg"
+        },
+        {
+          "id": "3",
+          "icon": "svg/javascript.svg"
+        },
+        {
+          "id": "4",
+          "icon": "svg/react.svg"
+        }
+      ],
+      "description": "Creating visually appealing and interactive web applications, utilizing a tech stack that includes HTML5, CSS, JavaScript, and React. My expertise lies in crafting responsive designs and dynamic user interfaces, ensuring an engaging and seamless user experience across various devices and platforms.",
+      "specialization": [
+        {
+          "id": "1",
+          "skill": "HTML5"
+        },
+        {
+          "id": "2",
+          "skill": "CSS3"
+        },
+        {
+          "id": "3",
+          "skill": "Javascript"
+        },
+        {
+          "id": "4",
+          "skill": "React"
+        }
+      ]
+    }
+  ],
+  "backend": [
+    {
+      "title": "Backend Development",
+      "icons": [
+        {
+          "id": "1",
+          "icon": "svg/node.svg"
+        },
+        {
+          "id": "2",
+          "icon": "svg/express.svg"
+        },
+        {
+          "id": "3",
+          "icon": "svg/api.svg"
+        },
+        {
+          "id": "4",
+          "icon": "svg/graphql.svg"
+        }
+      ],
+      "description": "My expertise in backend development is anchored in a strong command of Node.js, Express, REST APIs, and GraphQL, enabling me to engineer powerful and scalable server solutions. I focus on creating seamless data processing and integration, ensuring that every aspect of web functionality operates smoothly and effectively.",
+      "specialization": [
+        {
+          "id": "1",
+          "skill": "Node.js"
+        },
+        {
+          "id": "2",
+          "skill": "Express"
+        },
+        {
+          "id": "3",
+          "skill": "REST APIs"
+        },
+        {
+          "id": "4",
+          "skill": "GraphQL"
+        }
+      ]
+    }
+  ],
+  "database": [
+    {
+      "title": "Database Management",
+      "icons": [
+        {
+          "id": "1",
+          "icon": "svg/mongodb.svg"
+        },
+        {
+          "id": "2",
+          "icon": "svg/mysql.svg"
+        },
+        {
+          "id": "3",
+          "icon": "svg/postgresql.svg"
+        }
+      ],
+      "description": "Skilled in MongoDB, MySQL, and PostgreSQL, I bring a nuanced understanding of various database technologies to the table. My approach centers on designing data schemas that are not only robust and secure but also optimized for speed and scalability.",
+      "specialization": [
+        {
+          "id": "1",
+          "skill": "MongoDB"
+        },
+        {
+          "id": "2",
+          "skill": "MySQL"
+        },
+        {
+          "id": "3",
+          "skill": "PostgreSQL"
+        }
+      ]
+    }
+  ],
+  "design": [
+    {
+      "title": "Design UI/UX",
+      "icons": [
+        {
+          "id": "1",
+          "icon": "svg/figma.svg"
+        }
+      ],
+      "description": "With Figma as my primary design tool, I craft UI/UX designs that are clean, modern, and responsive. My work is driven by a passion for creating user-centric designs that are not only functional but also elevate the overall user journey.",
+      "specialization": [
+        {
+          "id": "1",
+          "skill": "Figma"
+        }
+      ]
+    }
+  ]
+}

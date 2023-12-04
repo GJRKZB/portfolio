@@ -1,0 +1,20 @@
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.9) 100%);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 19px 34px;
+}
+
+.btn__text {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
