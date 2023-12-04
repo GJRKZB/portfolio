@@ -5,8 +5,10 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
+const serverUri = import.meta.env.VITE_SERVER_URI || "http://localhost:4000";
+
 const client = new ApolloClient({
-  uri: "http://localhost:4000/",
+  uri: serverUri,
   cache: new InMemoryCache(),
 });
 
