@@ -6,7 +6,7 @@ export default function Projects({ title, image, alt, setIsOpen }) {
       <div className={styles.projects__card__content}>
         <h3>{title}</h3>
         <div className={styles.projects__card__content__image}>
-          <img src={image} alt={alt} />
+          <img src={image} alt={alt} loading="lazy" />
           <button
             className={styles.projects__card__cta}
             onClick={() => {

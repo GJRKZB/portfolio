@@ -3,19 +3,19 @@
     {
       "id": "1",
       "title": "Project",
-      "image": "png/golf-temp.png",
+      "image": "png/golf.png",
       "alt": "Golf Web Application"
     },
     {
       "id": "2",
       "title": "Project",
-      "image": "png/furniture-temp.png",
+      "image": "png/furniture.png",
       "alt": "Furniture Web Application"
     },
     {
       "id": "3",
       "title": "Project",
-      "image": "png/boxing-temp.png",
+      "image": "png/boxing.png",
       "alt": "Boxing Mobile Application"
     }
   ]

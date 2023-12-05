@@ -1,5 +1,5 @@
 import styles from "./Profile.module.css";
-import ProfilePicture from "/png/profile-temp.png";
+import ProfilePicture from "/png/profile.png";
 
 export default function Profile() {
   return (

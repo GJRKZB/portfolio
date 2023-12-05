@@ -16,11 +16,11 @@ import FormModal from "../../modal/FormModal";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Intro from "/png/intro-temp.png";
-import Signup from "/png/signup-temp.png";
-import Overview from "/png/overview-temp.png";
-import Detail from "/png/detail-temp.png";
-import Checkout from "/png/checkout-temp.png";
+import Intro from "/png/intro.png";
+import Signup from "/png/signup.png";
+import Overview from "/png/overview.png";
+import Detail from "/png/detail.png";
+import Checkout from "/png/checkout.png";
 
 export default function HomepageTemplate() {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,19 +86,19 @@ export default function HomepageTemplate() {
           <div className={styles.announcement__images__left}>
             <Slider {...sliderSettingsLeft}>
               <div className={styles["announcement--image"]}>
-                <img src={Intro} alt="intro" />
+                <img src={Intro} alt="intro" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Signup} alt="signup" />
+                <img src={Signup} alt="signup" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Overview} alt="overview" />
+                <img src={Overview} alt="overview" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Detail} alt="detail" />
+                <img src={Detail} alt="detail" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Checkout} alt="checkout" />
+                <img src={Checkout} alt="checkout" loading="lazy" />
               </div>
             </Slider>
           </div>
@@ -113,19 +113,19 @@ export default function HomepageTemplate() {
           <div className={styles.announcement__images__right}>
             <Slider {...sliderSettingsRight}>
               <div className={styles["announcement--image"]}>
-                <img src={Checkout} alt="checkout" />
+                <img src={Checkout} alt="checkout" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Detail} alt="detail" />
+                <img src={Detail} alt="detail" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Overview} alt="overview" />
+                <img src={Overview} alt="overview" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Signup} alt="signup" />
+                <img src={Signup} alt="signup" loading="lazy" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Intro} alt="intro" />
+                <img src={Intro} alt="intro" loading="lazy" />
               </div>
             </Slider>
           </div>
