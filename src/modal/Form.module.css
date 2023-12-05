@@ -209,6 +209,14 @@
     font-size: 15px;
   }
 
+  .button__container {
+    transition: none;
+  }
+
+  .button__container:hover {
+    transform: none;
+  }
+
   .button__container button {
     padding: 10px 10px;
     font-size: 15px;

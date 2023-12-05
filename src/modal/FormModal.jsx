@@ -72,7 +72,7 @@ export default function Form({ setIsOpen }) {
                 </div>
               </div>
               {loading && (
-                <p className={styles.loading__indicator}>Loading...</p>
+                <p className={styles.loading__indicator}>Forwarding...</p>
               )}
               {error && (
                 <p className={styles.error__message}>{error.message}</p>
