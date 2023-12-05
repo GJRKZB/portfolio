@@ -23,3 +23,13 @@
   font-weight: 700;
   line-height: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .btn__container {
+    transition: none;
+  }
+
+  .btn__container:hover {
+    transform: none;
+  }
+}
