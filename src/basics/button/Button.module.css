@@ -8,6 +8,11 @@
   border-radius: 10px;
   cursor: pointer;
   padding: 19px 34px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn__container:hover {
+  transform: scale(1.1);
 }
 
 .btn__text {

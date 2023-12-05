@@ -13,8 +13,8 @@ export default function Button({ children, setIsOpen, ...props }) {
       <span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="39"
-          height="39"
+          width="30"
+          height="30"
           viewBox="0 0 39 39"
           fill="none"
         >

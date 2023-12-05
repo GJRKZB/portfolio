@@ -19,7 +19,13 @@ export default function Footer({ setIsOpen }) {
         </Button>
       </div>
       <div className={styles.footer__social}>
-        <img src={LinkedIn} alt="LinkedIn" />
+        <a
+          href="https://www.linkedin.com/in/robinkonijnendijk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={LinkedIn} alt="LinkedIn" />
+        </a>
       </div>
       <p>Designed and developed by Robin</p>
     </div>

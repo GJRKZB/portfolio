@@ -43,7 +43,7 @@
   justify-content: end;
 }
 
-.footer__social img {
+.footer__social {
   margin-right: 5%;
 }
 
@@ -64,5 +64,8 @@
   }
   .footer__text h3 {
     font-size: 80px;
+  }
+  .footer__social {
+    margin-right: 10%;
   }
 }
