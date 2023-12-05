@@ -86,19 +86,19 @@ export default function HomepageTemplate() {
           <div className={styles.announcement__images__left}>
             <Slider {...sliderSettingsLeft}>
               <div className={styles["announcement--image"]}>
-                <img src={Intro} alt="intro" loading="lazy" />
+                <img src={Intro} alt="intro" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Signup} alt="signup" loading="lazy" />
+                <img src={Signup} alt="signup" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Overview} alt="overview" loading="lazy" />
+                <img src={Overview} alt="overview" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Detail} alt="detail" loading="lazy" />
+                <img src={Detail} alt="detail" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Checkout} alt="checkout" loading="lazy" />
+                <img src={Checkout} alt="checkout" />
               </div>
             </Slider>
           </div>
@@ -113,19 +113,19 @@ export default function HomepageTemplate() {
           <div className={styles.announcement__images__right}>
             <Slider {...sliderSettingsRight}>
               <div className={styles["announcement--image"]}>
-                <img src={Checkout} alt="checkout" loading="lazy" />
+                <img src={Checkout} alt="checkout" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Detail} alt="detail" loading="lazy" />
+                <img src={Detail} alt="detail" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Overview} alt="overview" loading="lazy" />
+                <img src={Overview} alt="overview" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Signup} alt="signup" loading="lazy" />
+                <img src={Signup} alt="signup" />
               </div>
               <div className={styles["announcement--image"]}>
-                <img src={Intro} alt="intro" loading="lazy" />
+                <img src={Intro} alt="intro" />
               </div>
             </Slider>
           </div>
