@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import styles from "./Form.module.css";
 import PaperPlane from "/png/paper-plane.png";
+import XMark from "/png/x-mark.png";
 
 const SEND_EMAIL = gql`
   mutation Mutation($email: String) {
@@ -43,6 +44,14 @@ export default function Form({ setIsOpen }) {
         }}
       ></div>
       <div className={styles.form__container}>
+        <i
+          className={styles.icon}
+          onClick={() => {
+            setIsOpen(false);
+          }}
+        >
+          <img src={XMark} alt="X Mark" />
+        </i>
         {!confirm ? (
           <div className={styles.form__content}>
             <h3>Get in touch</h3>
