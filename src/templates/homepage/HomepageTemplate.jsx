@@ -58,7 +58,7 @@ export default function HomepageTemplate() {
       {isOpen && <FormModal setIsOpen={setIsOpen} />}
       <div className={styles.homepage}>
         <header>
-          <Navbar />
+          <Navbar setIsOpen={setIsOpen} />
         </header>
         <section className={styles.hero__container}>
           <h1 className={styles.hero__title}>Full Stack Developer</h1>
@@ -73,7 +73,7 @@ export default function HomepageTemplate() {
             <Availability />
           </div>
         </section>
-        <section className={styles.tech__stack__container}>
+        <section id="full__stack" className={styles.tech__stack__container}>
           <h2 className={styles.tech__stack}>Tech Stack</h2>
           <p className={styles.tech__stack__text}>
             My technology stack is a versatile blend of front-end and back-end
@@ -130,8 +130,10 @@ export default function HomepageTemplate() {
             </Slider>
           </div>
         </section>
-        <section>
+        <section id="about">
           <Profile />
+        </section>
+        <section id="projects">
           <ProjectsList setIsOpen={setIsOpen} />
         </section>
         <footer>
