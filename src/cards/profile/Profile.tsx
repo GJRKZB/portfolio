@@ -1,7 +1,7 @@
 import styles from "./Profile.module.css";
 import ProfilePicture from "/png/profile.png";
 
-export default function Profile() {
+const Profile: React.FC = () => {
   return (
     <div className={styles.profile__cards}>
       <div className={styles.profile__card}>
@@ -26,4 +26,6 @@ export default function Profile() {
       </div>
     </div>
   );
-}
+};
+
+export default Profile;

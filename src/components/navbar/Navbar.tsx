@@ -1,7 +1,11 @@
 import styles from "./Navbar.module.css";
 import LinkedIn from "/svg/linkedin.svg";
 
-export default function Navbar({ setIsOpen }) {
+type NavbarProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ setIsOpen }) => {
   return (
     <nav className={styles.nav__container}>
       <div className={styles.icon__container}>
@@ -34,4 +38,6 @@ export default function Navbar({ setIsOpen }) {
       </ul>
     </nav>
   );
-}
+};
+
+export default Navbar;

@@ -1,7 +1,5 @@
-// Hooks
 import { useState } from "react";
 
-//Components
 import styles from "./HomepageTemplate.module.css";
 import Navbar from "../../components/navbar/Navbar";
 import Button from "../../basics/button/Button";
@@ -12,24 +10,28 @@ import ProjectsList from "../../cards/projects/ProjectsList";
 import Footer from "../../components/footer/Footer";
 import FormModal from "../../modal/FormModal";
 
-//Images & Plugins
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Settings } from "react-slick";
 import Intro from "/png/intro.png";
 import Signup from "/png/signup.png";
 import Overview from "/png/overview.png";
 import Detail from "/png/detail.png";
 import Checkout from "/png/checkout.png";
 
-export default function HomepageTemplate() {
-  const [isOpen, setIsOpen] = useState(false);
+type HomepageTemplateState = {
+  isOpen: boolean;
+};
+
+const HomepageTemplate: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<HomepageTemplateState["isOpen"]>(false);
   const btnStyle = {
     width: "286px",
     height: "70px",
   };
 
-  const sliderSettingsLeft = {
+  const sliderSettingsLeft: Settings = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -41,7 +43,7 @@ export default function HomepageTemplate() {
     speed: 5000,
   };
 
-  const sliderSettingsRight = {
+  const sliderSettingsRight: Settings = {
     dots: false,
     infinite: true,
     arrows: false,
@@ -142,4 +144,6 @@ export default function HomepageTemplate() {
       </div>
     </>
   );
-}
+};
+
+export default HomepageTemplate;

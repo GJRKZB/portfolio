@@ -1,6 +1,6 @@
 import styles from "./Availability.module.css";
 
-export default function Availability() {
+const Availability: React.FC = () => {
   return (
     <div className={styles.availability__container}>
       <i className={styles.availability__icon}>
@@ -25,4 +25,6 @@ export default function Availability() {
       </div>
     </div>
   );
-}
+};
+
+export default Availability;

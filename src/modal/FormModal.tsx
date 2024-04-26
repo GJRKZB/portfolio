@@ -1,5 +1,6 @@
+import React, { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
-import { useMutation, gql } from "@apollo/client";
+import { MutationTuple, useMutation, gql, ApolloError } from "@apollo/client";
 import styles from "./Form.module.css";
 import PaperPlane from "/png/paper-plane.png";
 import XMark from "/png/x-mark.png";
@@ -12,25 +13,47 @@ const SEND_EMAIL = gql`
   }
 `;
 
-export default function Form({ setIsOpen }) {
-  const [email, setEmail] = useState("");
-  const [confirm, setConfirm] = useState(false);
-  const [createUser, { loading, error }] = useMutation(SEND_EMAIL, {
-    onError: (err) => {},
-    onCompleted: () => {
+type FormProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+type FormState = {
+  email: string;
+  confirm: boolean;
+};
+
+type CreateUserMutationData = {
+  createUser: {
+    email: string;
+  };
+};
+
+type CreateUserMutationVars = {
+  email: string;
+};
+
+const Form: React.FC<FormProps> = ({ setIsOpen }) => {
+  const [email, setEmail] = useState<FormState["email"]>("");
+  const [confirm, setConfirm] = useState<FormState["confirm"]>(false);
+  const [createUser, { loading, error }] = useMutation<
+    CreateUserMutationData,
+    CreateUserMutationVars
+  >(SEND_EMAIL, {
+    onError: (err: ApolloError) => {},
+    onCompleted: (data: CreateUserMutationData) => {
       setConfirm(true);
       setEmail("");
     },
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
     if (error) {
       error.message = "";
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     createUser({ variables: { email } });
   };
@@ -91,4 +114,6 @@ export default function Form({ setIsOpen }) {
       </div>
     </>
   );
-}
+};
+
+export default Form;

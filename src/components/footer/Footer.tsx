@@ -2,7 +2,11 @@ import Button from "../../basics/button/Button";
 import styles from "./Footer.module.css";
 import LinkedIn from "/svg/linkedin.svg";
 
-export default function Footer({ setIsOpen }) {
+type FooterProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Footer: React.FC<FooterProps> = ({ setIsOpen }) => {
   const btnStyle = {
     width: "286px",
     padding: "10px, 34px",
@@ -30,4 +34,6 @@ export default function Footer({ setIsOpen }) {
       <p>Designed and developed by Robin</p>
     </div>
   );
-}
+};
+
+export default Footer;

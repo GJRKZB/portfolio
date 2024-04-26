@@ -2,7 +2,7 @@ import TechStack from "./TechStack";
 import data from "../../data/tech-stack.json";
 import styles from "./TechStackList.module.css";
 
-export default function TechStackList() {
+const TechStackList: React.FC = () => {
   const technologies = [
     ...data.frontend,
     ...data.backend,
@@ -24,4 +24,6 @@ export default function TechStackList() {
       ))}
     </div>
   );
-}
+};
+
+export default TechStackList;

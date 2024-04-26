@@ -2,7 +2,11 @@ import Projects from "./Projects";
 import data from "../../data/projects.json";
 import styles from "./ProjectsList.module.css";
 
-export default function ProjectsList({ setIsOpen }) {
+type ProjectsListProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const ProjectsList: React.FC<ProjectsListProps> = ({ setIsOpen }) => {
   return (
     <div className={styles.projects__cards}>
       {data.projects.map((item) => (
@@ -16,4 +20,6 @@ export default function ProjectsList({ setIsOpen }) {
       ))}
     </div>
   );
-}
+};
+
+export default ProjectsList;
