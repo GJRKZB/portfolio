@@ -32,6 +32,10 @@
   justify-content: end;
 }
 
+.tech__stack__icon i {
+  display: flex;
+}
+
 .tech__stack__content h3 {
   font-family: "Inter", sans-serif;
   font-size: 30px;

@@ -1,6 +1,5 @@
 .homepage {
   height: 100%;
-  width: 100%;
   position: relative;
   z-index: 2;
 }
@@ -110,7 +109,7 @@
 .announcement__container {
   margin-top: 10%;
   padding: 10%;
-  height: 420px;
+  max-height: 400px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background: linear-gradient(

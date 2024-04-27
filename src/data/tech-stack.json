@@ -9,18 +9,18 @@
         },
         {
           "id": "2",
-          "icon": "svg/css3.svg"
+          "icon": "svg/tailwind.svg"
         },
         {
           "id": "3",
-          "icon": "svg/javascript.svg"
+          "icon": "svg/typescript.svg"
         },
         {
           "id": "4",
           "icon": "svg/react.svg"
         }
       ],
-      "description": "Creating visually appealing and interactive web applications, utilizing a tech stack that includes HTML5, CSS, JavaScript, and React. My expertise lies in crafting responsive designs and dynamic user interfaces, ensuring an engaging and seamless user experience across various devices and platforms.",
+      "description": "Creating visually appealing and interactive web applications, utilizing a tech stack that includes HTML5, Tailwind CSS, TypeScript, and React. My expertise lies in crafting responsive designs and dynamic user interfaces, ensuring an engaging and seamless user experience across various devices and platforms.",
       "specialization": [
         {
           "id": "1",
@@ -28,11 +28,11 @@
         },
         {
           "id": "2",
-          "skill": "CSS3"
+          "skill": "Tailwind CSS"
         },
         {
           "id": "3",
-          "skill": "Javascript"
+          "skill": "TypeScript"
         },
         {
           "id": "4",

@@ -25,7 +25,10 @@ export interface translationTypes {
   };
   profile: {
     aboutMe: string;
-    personalInterests: string;
+    personalInterests: {
+      firstLine: string;
+      secondLine: string;
+    };
   };
   footer: {
     cta: string;
