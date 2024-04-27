@@ -9,7 +9,24 @@ export const translations: translationTypes = {
   },
   availability: {
     openToWork: "Open to work",
-    basedIn: "Based in the Netherlands",
+    closedToWork: "Not available for work",
+    location: "Based in the Netherlands",
+  },
+  hero: {
+    title: "Full Stack Developer",
+    subtitle:
+      "Crafting Innovative Solutions Across the Full Technology Stack for web and mobile applications",
+    btn: "Get in touch",
+  },
+  techStack: {
+    title: "Tech Stack",
+    subtitle:
+      "My technology stack is a versatile blend of front-end and back-end technologies, meticulously chosen to build efficient, scalable and responsive applications.",
+  },
+  announcement: {
+    title: "From Design to Deployment",
+    subtitle:
+      "Expertly navigating the journey from initial design to final deployment, I deliver comprehensive software solutions that encapsulate the essence of both form and function.",
   },
   profile: {
     aboutMe: "About me",
@@ -20,5 +37,13 @@ export const translations: translationTypes = {
     cta: "Let's talk",
     btn: "Get in touch",
     createdBy: "Designed and developed by Robin",
+  },
+  form: {
+    getInTouch: "Get in touch",
+    btn: "Send",
+    loading: "Forwarding...",
+    confirmation: "Thank you!",
+    message:
+      "Your email has been forwarded successfully I will reach out to you shortly",
   },
 };

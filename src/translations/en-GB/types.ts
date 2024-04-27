@@ -7,7 +7,21 @@ export interface translationTypes {
   };
   availability: {
     openToWork: string;
-    basedIn: string;
+    closedToWork: string;
+    location: string;
+  };
+  hero: {
+    title: string;
+    subtitle: string;
+    btn: string;
+  };
+  techStack: {
+    title: string;
+    subtitle: string;
+  };
+  announcement: {
+    title: string;
+    subtitle: string;
   };
   profile: {
     aboutMe: string;
@@ -17,5 +31,12 @@ export interface translationTypes {
     cta: string;
     btn: string;
     createdBy: string;
+  };
+  form: {
+    getInTouch: string;
+    btn: string;
+    loading: string;
+    confirmation: string;
+    message: string;
   };
 }

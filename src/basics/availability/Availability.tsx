@@ -23,7 +23,7 @@ const Availability: React.FC = () => {
           {translations.availability.openToWork}
         </h3>
         <p className={styles.availability__subtitle}>
-          {translations.availability.basedIn}
+          {translations.availability.location}
         </p>
       </div>
     </div>

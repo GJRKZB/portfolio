@@ -9,6 +9,7 @@ import Profile from "../../cards/profile/Profile";
 import ProjectsList from "../../cards/projects/ProjectsList";
 import Footer from "../../components/footer/Footer";
 import FormModal from "../../modal/FormModal";
+import { translations } from "../../translations/en-GB/en-GB";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -63,24 +64,21 @@ const HomepageTemplate: React.FC = () => {
           <Navbar setIsOpen={setIsOpen} />
         </header>
         <section className={styles.hero__container}>
-          <h1 className={styles.hero__title}>Full Stack Developer</h1>
+          <h1 className={styles.hero__title}>{translations.hero.title}</h1>
           <h2 className={styles.hero__subtitle}>
-            Crafting Innovative Solutions Across the Full Technology Stack for
-            web and mobile applications
+            {translations.hero.subtitle}
           </h2>
           <div className={styles.hero__btn__availability}>
             <Button style={btnStyle} setIsOpen={setIsOpen}>
-              Get in touch
+              {translations.hero.btn}
             </Button>
             <Availability />
           </div>
         </section>
         <section id="full__stack" className={styles.tech__stack__container}>
-          <h2 className={styles.tech__stack}>Tech Stack</h2>
+          <h2 className={styles.tech__stack}>{translations.techStack.title}</h2>
           <p className={styles.tech__stack__text}>
-            My technology stack is a versatile blend of front-end and back-end
-            technologies, meticulously chosen to build efficient, scalable and
-            responsive applications.
+            {translations.techStack.subtitle}
           </p>
           <TechStackList />
         </section>
@@ -105,12 +103,10 @@ const HomepageTemplate: React.FC = () => {
             </Slider>
           </div>
           <h2 className={styles.announcement__title}>
-            From Design to Deployment
+            {translations.announcement.title}
           </h2>
           <p className={styles.announcement__text}>
-            Expertly navigating the journey from initial design to final
-            deployment, I deliver comprehensive software solutions that
-            encapsulate the essence of both form and function.
+            {translations.announcement.subtitle}
           </p>
           <div className={styles.announcement__images__right}>
             <Slider {...sliderSettingsRight}>

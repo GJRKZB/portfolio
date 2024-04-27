@@ -4,6 +4,7 @@ import { MutationTuple, useMutation, gql, ApolloError } from "@apollo/client";
 import styles from "./Form.module.css";
 import PaperPlane from "/png/paper-plane.png";
 import XMark from "/png/x-mark.png";
+import { translations } from "../translations/en-GB/en-GB";
 
 const SEND_EMAIL = gql`
   mutation Mutation($email: String) {
@@ -77,7 +78,7 @@ const Form: React.FC<FormProps> = ({ setIsOpen }) => {
         </i>
         {!confirm ? (
           <div className={styles.form__content}>
-            <h3>Get in touch</h3>
+            <h3>{translations.form.getInTouch}</h3>
             <form onSubmit={handleSubmit}>
               <div className={styles.form__input}>
                 <input
@@ -89,13 +90,15 @@ const Form: React.FC<FormProps> = ({ setIsOpen }) => {
                 />
                 <div className={styles.button__container}>
                   <button type="submit">
-                    Send
+                    {translations.form.btn}
                     <img src={PaperPlane} alt="Paper Plane" />
                   </button>
                 </div>
               </div>
               {loading && (
-                <p className={styles.loading__indicator}>Forwarding...</p>
+                <p className={styles.loading__indicator}>
+                  {translations.form.loading}
+                </p>
               )}
               {error && (
                 <p className={styles.error__message}>{error.message}</p>
@@ -104,11 +107,8 @@ const Form: React.FC<FormProps> = ({ setIsOpen }) => {
           </div>
         ) : (
           <div className={styles.confirm__message}>
-            <h3>Thank you!</h3>
-            <p>
-              Your email has been forwarded successfully I will reach out to you
-              shortly
-            </p>
+            <h3>{translations.form.confirmation}</h3>
+            <p>{translations.form.message}</p>
           </div>
         )}
       </div>
