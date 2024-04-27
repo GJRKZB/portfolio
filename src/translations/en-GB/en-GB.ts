@@ -15,7 +15,7 @@ export const translations: translationTypes = {
   hero: {
     title: "Full Stack Developer",
     subtitle:
-      "Crafting Innovative Solutions Across the Full Technology Stack for web and mobile applications",
+      "Crafting innovative solutions across the full technology stack for web and mobile applications",
     btn: "Get in touch",
   },
   techStack: {
@@ -30,8 +30,12 @@ export const translations: translationTypes = {
   },
   profile: {
     aboutMe: "About me",
-    personalInterests:
-      "Welcome to my world beyond coding! I'm passionate about the thrill of football and the adventures of travel, each offering unique experiences and lessons. In the gym, I find a balance of strength and discipline. Off the field, I lose myself in the immersive worlds of books and the captivating stories of cinema, each enriching my life with diverse perspectives and creativity. These interests shape my approach to life, combining energy, exploration, and a love for storytelling.",
+    personalInterests: {
+      firstLine:
+        "As a software developer with a winning mindset and passion for technology, I am committed to excellence in every project. My perseverance and ability to solve complex problems are enhanced by a background influenced by entrepreneurial parents, fostering a love for innovation.",
+      secondLine:
+        "Outside work, I stay energized with obstacle runs, football, and gym workouts. I am eager to connect with other professionals and explore new tech opportunities.",
+    },
   },
   footer: {
     cta: "Let's talk",

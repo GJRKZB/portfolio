@@ -131,9 +131,10 @@ const HomepageTemplate: React.FC = () => {
         <section id="about">
           <Profile />
         </section>
-        <section id="projects">
+        {/* //TODO: add project information and experieces */}
+        {/* <section id="projects">
           <ProjectsList setIsOpen={setIsOpen} />
-        </section>
+        </section> */}
         <footer>
           <Footer setIsOpen={setIsOpen} />
         </footer>

@@ -9,7 +9,8 @@ const Profile: React.FC = () => {
         <div className={styles.profile__card__content}>
           <div className={styles.profile__card__content__text}>
             <h3>{translations.profile.aboutMe}</h3>
-            <p>{translations.profile.personalInterests}</p>
+            <p>{translations.profile.personalInterests.firstLine}</p>
+            <p>{translations.profile.personalInterests.secondLine}</p>
           </div>
           <div className={styles.profile__card__content__image}>
             <img src={ProfilePicture} alt="Profile Picture" />
