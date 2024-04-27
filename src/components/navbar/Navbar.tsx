@@ -1,7 +1,12 @@
 import styles from "./Navbar.module.css";
 import LinkedIn from "/svg/linkedin.svg";
+import { translations } from "../../translations/en-GB/en-GB";
 
-export default function Navbar({ setIsOpen }) {
+type NavbarProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ setIsOpen }) => {
   return (
     <nav className={styles.nav__container}>
       <div className={styles.icon__container}>
@@ -15,13 +20,13 @@ export default function Navbar({ setIsOpen }) {
       </div>
       <ul className={styles.nav__links}>
         <li className={styles.nav__links__item}>
-          <a href="#full__stack">Tech Stack</a>
+          <a href="#full__stack">{translations.navigation.techStack}</a>
         </li>
         <li className={styles.nav__links__item}>
-          <a href="#about">About</a>
+          <a href="#about">{translations.navigation.about}</a>
         </li>
         <li className={styles.nav__links__item}>
-          <a href="#projects">Projects</a>
+          <a href="#projects">{translations.navigation.projects}</a>
         </li>
         <li
           className={styles.nav__links__item}
@@ -29,9 +34,11 @@ export default function Navbar({ setIsOpen }) {
             setIsOpen(true);
           }}
         >
-          Contact
+          {translations.navigation.contact}
         </li>
       </ul>
     </nav>
   );
-}
+};
+
+export default Navbar;

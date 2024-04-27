@@ -1,6 +1,18 @@
 import styles from "./Projects.module.css";
 
-export default function Projects({ title, image, alt, setIsOpen }) {
+type ProjectsProps = {
+  title: string;
+  image: string;
+  alt: string;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Projects: React.FC<ProjectsProps> = ({
+  title,
+  image,
+  alt,
+  setIsOpen,
+}) => {
   return (
     <div className={styles.projects__card}>
       <div className={styles.projects__card__content}>
@@ -43,4 +55,6 @@ export default function Projects({ title, image, alt, setIsOpen }) {
       </div>
     </div>
   );
-}
+};
+
+export default Projects;
