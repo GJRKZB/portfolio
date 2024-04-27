@@ -1,4 +1,5 @@
 import styles from "./Availability.module.css";
+import { translations } from "../../translations/en-GB/en-GB";
 
 const Availability: React.FC = () => {
   return (
@@ -18,9 +19,11 @@ const Availability: React.FC = () => {
         </svg>
       </i>
       <div className={styles.availability__text}>
-        <h3 className={styles.availability__title}>Open to work</h3>
+        <h3 className={styles.availability__title}>
+          {translations.availability.openToWork}
+        </h3>
         <p className={styles.availability__subtitle}>
-          Based in the Netherlands
+          {translations.availability.basedIn}
         </p>
       </div>
     </div>

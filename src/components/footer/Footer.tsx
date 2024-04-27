@@ -1,6 +1,7 @@
 import Button from "../../basics/button/Button";
 import styles from "./Footer.module.css";
 import LinkedIn from "/svg/linkedin.svg";
+import { translations } from "../../translations/en-GB/en-GB";
 
 type FooterProps = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -16,10 +17,10 @@ const Footer: React.FC<FooterProps> = ({ setIsOpen }) => {
     <div className={styles.footer__container}>
       <div className={styles.footer__content}>
         <div className={styles.footer__text}>
-          <h3>Let's talk</h3>
+          <h3>{translations.footer.cta}</h3>
         </div>
         <Button style={btnStyle} setIsOpen={setIsOpen}>
-          Get in touch
+          {translations.footer.btn}
         </Button>
       </div>
       <div className={styles.footer__social}>
@@ -31,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ setIsOpen }) => {
           <img src={LinkedIn} alt="LinkedIn" />
         </a>
       </div>
-      <p>Designed and developed by Robin</p>
+      <p>{translations.footer.createdBy}</p>
     </div>
   );
 };

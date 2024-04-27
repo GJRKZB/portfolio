@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import LinkedIn from "/svg/linkedin.svg";
+import { translations } from "../../translations/en-GB/en-GB";
 
 type NavbarProps = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -19,13 +20,13 @@ const Navbar: React.FC<NavbarProps> = ({ setIsOpen }) => {
       </div>
       <ul className={styles.nav__links}>
         <li className={styles.nav__links__item}>
-          <a href="#full__stack">Tech Stack</a>
+          <a href="#full__stack">{translations.navigation.techStack}</a>
         </li>
         <li className={styles.nav__links__item}>
-          <a href="#about">About</a>
+          <a href="#about">{translations.navigation.about}</a>
         </li>
         <li className={styles.nav__links__item}>
-          <a href="#projects">Projects</a>
+          <a href="#projects">{translations.navigation.projects}</a>
         </li>
         <li
           className={styles.nav__links__item}
@@ -33,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ setIsOpen }) => {
             setIsOpen(true);
           }}
         >
-          Contact
+          {translations.navigation.contact}
         </li>
       </ul>
     </nav>
