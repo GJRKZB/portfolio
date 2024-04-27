@@ -1,18 +1,11 @@
 import React, { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
-import { MutationTuple, useMutation, gql, ApolloError } from "@apollo/client";
+import { useMutation, ApolloError } from "@apollo/client";
+import { SEND_EMAIL } from "../../graphql/Mutations";
+import { translations } from "../translations/en-GB/en-GB";
 import styles from "./Form.module.css";
 import PaperPlane from "/png/paper-plane.png";
 import XMark from "/png/x-mark.png";
-import { translations } from "../translations/en-GB/en-GB";
-
-const SEND_EMAIL = gql`
-  mutation Mutation($email: String) {
-    createUser(email: $email) {
-      email
-    }
-  }
-`;
 
 type FormProps = {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
