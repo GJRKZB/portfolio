@@ -1,6 +1,7 @@
 import styles from "./Availability.module.css";
+import { translations } from "../../translations/en-GB/en-GB";
 
-export default function Availability() {
+const Availability: React.FC = () => {
   return (
     <div className={styles.availability__container}>
       <i className={styles.availability__icon}>
@@ -18,11 +19,15 @@ export default function Availability() {
         </svg>
       </i>
       <div className={styles.availability__text}>
-        <h3 className={styles.availability__title}>Open to work</h3>
+        <h3 className={styles.availability__title}>
+          {translations.availability.openToWork}
+        </h3>
         <p className={styles.availability__subtitle}>
-          Based in the Netherlands
+          {translations.availability.location}
         </p>
       </div>
     </div>
   );
-}
+};
+
+export default Availability;

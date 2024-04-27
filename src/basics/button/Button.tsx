@@ -1,6 +1,12 @@
 import styles from "./Button.module.css";
 
-export default function Button({ children, setIsOpen, ...props }) {
+type ButtonProps = {
+  children: React.ReactNode;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  style?: React.CSSProperties;
+};
+
+const Button: React.FC<ButtonProps> = ({ children, setIsOpen, ...props }) => {
   return (
     <button
       {...props}
@@ -38,4 +44,6 @@ export default function Button({ children, setIsOpen, ...props }) {
       </span>
     </button>
   );
-}
+};
+
+export default Button;

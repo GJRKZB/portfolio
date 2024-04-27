@@ -1,13 +1,21 @@
 import { useInView } from "react-intersection-observer";
 import styles from "./TechStack.module.css";
 
-export default function TechStack({
+type TechStackProps = {
+  title: string;
+  icons: { id: string; icon: string }[];
+  description: string;
+  specialization: { id: string; skill: string }[];
+  index: number;
+};
+
+const TechStack: React.FC<TechStackProps> = ({
   title,
   icons,
   description,
   specialization,
   index,
-}) {
+}) => {
   const { ref: techStackRef, inView: isVisible } = useInView({
     triggerOnce: true,
   });
@@ -28,7 +36,7 @@ export default function TechStack({
         <div className={styles.tech__stack__icon}>
           {icons.map((item) => (
             <i key={item.id}>
-              <img src={item.icon} alt={item.alt} />
+              <img src={item.icon} />
             </i>
           ))}
         </div>
@@ -43,4 +51,6 @@ export default function TechStack({
       </div>
     </div>
   );
-}
+};
+
+export default TechStack;
